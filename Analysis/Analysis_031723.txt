@@ -1,0 +1,30 @@
+Version V1
+Data set name: Red_October_DS_030923.txt
+Number of position / transmit records: 231
+Data set start time: 03-09-23 08:33:11
+Run time in minutes: 85
+Number of hotspots seen: 888
+Number of unique hotspots: 191
+Max number of hotspots seen on a single transmit: 17 (36.06374, -94.17238)
+Average number of hotspots per transmit: 3.84
+Data set distance in miles: 49.9
+
+Hotspots that are more than 10 miles from GPS coordinates and RSSI greater than -95 -> possible placement error
+**********************************************************************************
+13 123 short-tin-pig             -74 36.14913 -94.18610 35.98279 -94.08289
+23 164 ancient-marmalade-wren    -83 36.06646 -94.16883 36.18363 -94.55038
+23 165 ancient-marmalade-wren    -86 36.06646 -94.16843 36.18363 -94.55038
+23 166 ancient-marmalade-wren    -77 36.06642 -94.16683 36.18363 -94.55038
+23 167 ancient-marmalade-wren    -75 36.06639 -94.16539 36.18363 -94.55038
+23 168 ancient-marmalade-wren    -92 36.06634 -94.16312 36.18363 -94.55038
+23 169 ancient-marmalade-wren    -92 36.06624 -94.16077 36.18363 -94.55038
+11 196 huge-paisley-ostrich      -92 36.12568 -94.14461 35.97343 -94.19454
+11 197 huge-paisley-ostrich      -94 36.12736 -94.14455 35.97343 -94.19454
+
+***************** LoRa device location by strongest hotspot method **********************
+Average error in miles: 1.6
+Average error in miles (with Blocked List): 0.7
+
+***************** LoRa device location by plain average lat/long hotspot method **********************
+Average error in miles: 1.0
+Average error in miles (with Blocked List): 0.9

@@ -1,0 +1,9 @@
+#!/bin/sh
+echo "Starting website"
+while true
+do
+nc -l 8876
+echo "\n**********\n"
+echo -n "Record time: "
+date
+done

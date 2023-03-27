@@ -1,0 +1,38 @@
+echo Starting
+grep -v "POST / HTTP/1.1" log > clean1.log
+echo step 1
+grep -v "Starting website" clean1.log > clean2.log
+echo step 2
+grep -v "Record time" clean2.log > clean3.log 
+echo step 3
+grep -v "Host: zebra1." clean3.log > clean4.log
+echo step 4
+grep -v "User-Agent: hackney" clean4.log > clean5.log
+echo step 5
+grep -v "Content-Type: application/json" clean5.log > clean6.log
+echo step 6
+grep -v "Content-Length: " clean6.log > clean7.log
+echo step 7
+grep -v "\*\*\*\*\*\*" clean7.log > clean8.log
+echo step 8
+grep "\S" clean8.log > clean9.log
+echo step 9
+sed '$!s/$/,/' clean9.log > clean10.log
+echo step 10
+sed '1i [' clean10.log > clean11.log
+echo step 11
+echo "]" >> clean11.log
+echo step 12
+cat clean11.log | jq . > clean12.log
+echo step 13
+#grep -v "app_eui" clean12.log > clean13.log
+echo step 14
+#grep -v "dev_eui" clean13.log > clean14.log
+echo step 15
+#grep -v "devaddr" clean14.log > clean15.log
+echo step 16
+#grep -v "downlink_url" clean15.log > clean16.log
+echo step 17
+#grep -v "organization_id" clean16.log > clean17.log
+echo step 18
+echo done
